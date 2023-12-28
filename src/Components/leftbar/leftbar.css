@@ -1,0 +1,77 @@
+.sidebar-navigation {
+	display: inline-block;
+	min-height: 100vh;
+	width: 80px;
+	background-color: #313443;
+}
+
+.sidebar-navigation ul {
+	text-align: center;
+    justify-content: center;
+    align-items: center;
+	color: white;
+}
+
+.sidebar-navigation ul li {
+	padding: 28px 0;
+	cursor: pointer;
+    list-style-type: none;
+	position: relative;
+	transition: all ease-out 120ms;
+}
+
+.ChatSection {
+	position: absolute;
+	top: 0;
+	left: 40px; /* Adjust the distance from the left side as needed */
+	/* Add more styling as needed */
+  }
+
+/* .sidebar-navigation ul li p {
+	display: block;
+	font-size: 24px;
+	transition: all ease 450ms;
+} */
+
+.sidebar-navigation ul li .tooltip {
+	display: inline-block;
+	position: absolute;
+	background-color: #313443;
+	padding: 8px 15px;
+	border-radius: 3px;
+	margin-top: -26px;
+	left: 90px;
+	opacity: 0;
+	visibility: hidden;
+	font-size: 13px;
+	letter-spacing: .5px;
+}
+
+.sidebar-navigation ul li .tooltip:before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: -4px;
+	top: 10px;
+	transform: rotate(45deg);
+	width: 10px;
+	height: 10px;
+	background-color: inherit;
+}
+
+.sidebar-navigation ul li:hover {
+	background-color: #22252E;
+}
+
+.sidebar-navigation ul li:hover .tooltip {
+	visibility: visible;
+	opacity: 1;
+}
+
+.sidebar-navigation ul li.active {
+	background-color: #22252E;
+}
+
+.sidebar-navigation ul li.active i {
+	color: #98D7EC;
+}

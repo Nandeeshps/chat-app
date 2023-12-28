@@ -1,0 +1,152 @@
+
+.head {
+	background: linear-gradient(rgba(0, 0, 75, 0.5), rgba(30, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1431538510849-b719825bf08b?q=80&fm=jpg&s=6fd7a983e3b43e66d2b6062856b9df66);
+	height: 100vh;
+	width: 100vw;
+	background-size: cover;
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	margin: 0 auto;
+}
+
+h1, p {
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 0.8;
+
+}
+
+h1 {
+	font-size: 60pt;
+	text-align: center;
+	line-height: .2em;
+}
+
+p {
+	font-size: 30pt;
+	text-align: center;
+	line-height: 1em;
+}
+
+button {
+  padding: 12px 19px;
+  background:transparent;
+  color:#fff;
+  border: 2px solid white;
+  font-size: 15px;
+  border-radius: 0px;
+  transition: all .3s ease;
+  margin: 0 20px 0 20px;
+}
+
+button:hover {
+  background: white;
+  color: black;  
+}
+@media (max-width: 600px) {
+  h1 {
+      font-size: 40pt;
+    }
+  p {
+    font-size: 20pt;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 364px) {
+  h1 {
+      font-size: 30pt;
+    }
+  p {
+    font-size: 15pt;
+    font-weight: 300;
+  }
+}
+
+:root {
+    --greenSeaweed: rgba(2, 128, 144, 1);
+    --blueQueen: rgba(69, 105, 144, 1);
+    --redFire: rgba(244, 91, 105, 1);
+  }
+  
+  .login {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.447);
+    padding: 40px 30px 30px 30px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    transition: transform 300ms, box-shadow 300ms;
+    box-shadow: 5px 10px 10px rgba(2, 128, 144, 0.2);
+  }
+  
+  .login::before, .login::after {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 40%;
+    z-index: -1;
+  }
+  
+  .login::before {
+    left: 40%;
+    bottom: -130%;
+    background-color: rgba(69, 105, 144, 0.15);
+    animation: wawes 6s infinite linear;
+  }
+  
+  .login::after {
+    left: 35%;
+    bottom: -125%;
+    background-color: rgba(2, 128, 144, 0.2);
+    animation: wawes 7s infinite;
+  }
+  
+  .login > input {
+    font-family: 'Asap', sans-serif;
+    display: block;
+    border-radius: 5px;
+    font-size: 16px;
+    background: white;
+    width: 100%;
+    border: 0;
+    padding: 10px 10px;
+    margin: 15px -10px;
+  }
+  
+  .login > button {
+    font-family: 'Asap', sans-serif;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 80px;
+    border: 0;
+    padding: 10px 0;
+    margin-top: 10px;
+    margin-left: -5px;
+    border-radius: 5px;
+    background-color: rgba(244, 91, 105, 1);
+    transition: background-color 300ms;
+  }
+  
+  .login > button:hover {
+    background-color: rgba(239, 86, 100, 1);
+  }
+  
+  @keyframes wawes {
+    from { transform: rotate(0); }
+    to { transform: rotate(360deg); }
+  }
+  

@@ -1,0 +1,204 @@
+/* Media Query for Mobile */
+@media screen and (max-width: 480px) {
+    /* CSS content for mobile */
+  }
+  
+  /* Media Query for Tablet */
+  @media screen and (max-width: 768px) {
+    /* CSS content for tablet */
+  }
+  
+  /* Media Query for Laptop */
+  @media screen and (max-width: 1200px) {
+    /* CSS content for laptop */
+  }
+
+.sidebar{
+    flex: 1;
+    background-color: red;
+}
+.sidebar .navbar{
+    display: flex;
+    align-items: center;
+    background-color: yellow;
+    height: 50px;
+    padding: 10px;
+    justify-content: space-between;
+    color: blue;
+}
+.sidebar .navbar .logo{
+    font-weight: bolder;
+}
+.sidebar .navbar .user{
+    display: flex;
+    gap: 10px;
+}
+.sidebar .navbar .user img{
+    background-color: green;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+} 
+.search{
+    border-bottom: 1px solid black;
+}
+.search .searchForm{
+    padding: 10px;
+}
+.search .searchForm input{
+background-color: transparent;
+border: none;
+color: white;
+outline: none;
+width: 100%;
+}
+.search .searchForm input::placeholder{
+    color: lightgreen;
+
+}
+.search .userChat{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    cursor: pointer;
+}
+.search .userChat:hover{
+    background-color: #2f2d52;
+}
+.search .userChat img{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+object-fit: cover;
+}
+.search .userChatInfo span{
+    font-size: 18px;
+    font-weight: 500;
+}
+.userChatInfo p{
+    font-size: 12px;
+    color: lightgrey;
+}
+
+.chats .userChat{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    cursor: pointer;
+}
+.chats .userChat:hover{
+    background-color: #2f2d52;
+}
+.chats .userChat img{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+object-fit: cover;
+}
+.chats .userChatInfo span{
+    font-size: 18px;
+    font-weight: 500;
+}
+.chats .userChatInfo p{
+    font-size: 12px;
+    color: lightgrey;
+}
+.chat{
+    flex: 2;
+}
+.chat .chatInfo{
+    height: 50px;
+    background-color: #5d5b8d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: lightgrey;
+}
+.chat .chatInfo .chatIcons {
+    display: flex;
+    gap: 20px;
+}
+
+.messages{
+    background-color: #ddddf7;
+    padding: 10px;
+    height: calc(100% - 160px);
+    overflow: scroll;
+
+}
+.message{
+    display: flex;
+    gap:20px;
+    margin-bottom: 20px;
+}
+
+.message .messageInfo{
+display: flex;
+flex-direction: column;
+color: gray;
+font-weight: 300;
+}
+.message .messageInfo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.message .messageContent{
+max-width: 80%;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.message .messageContent p{
+    background-color: white;
+    padding: 10px 20px;
+    color: black;
+    border-radius: 0 10px 10px 10px;
+    max-width: max-content;
+}
+.message .messageContent img{
+    width: 50%;
+}
+.message.owner {
+    flex-direction: row-reverse;
+  }
+
+  .message.owner .messageContent{
+    align-items: flex-end;
+  }
+  .message.owner p{
+    background-color: #8da4f1;
+    color: white;
+    border-radius: 10px 0px 10px 10px;
+  }
+
+.input{
+    height: 50px;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.input input{
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #2f2d52;
+    font-size: 18px;
+}
+.input input::placeholder{
+    color: lightgray;
+}
+.input .send{
+display: flex;
+align-items: center;
+gap: 10px;
+}
